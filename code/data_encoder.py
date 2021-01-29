@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pylab as pl
 
-df_dataset = pd.read_excel("C:\\Users\\Admin\\Desktop\\Course_Recommendation\\code\\data\\Dataset1.xlsx")
+df_dataset = pd.read_excel("C:\\Users\\Admin\\Desktop\\Course_Recommendation\\code\\data\\Dataset1(1).xlsx")
 
 df_dataset.head()
 cat_df_dataset = df_dataset.select_dtypes(include=['object']).copy()
@@ -68,6 +68,6 @@ plt.show()
 sns.barplot(df_new['Course ID'],df_new['Attepmpts'])
 plt.show()
 
-writer = pd.ExcelWriter('encoded_data.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('encoded_data1.xlsx', engine='xlsxwriter')
 df_dataset.to_excel(writer, sheet_name='Sheet1')
 writer.save()

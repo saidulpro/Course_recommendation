@@ -1,6 +1,6 @@
 import pandas as pd
 
-df_dataset = pd.read_excel("C:\\Users\\Admin\\Desktop\\Course_Recommendation\\code\\encoded_data.xlsx")
+df_dataset = pd.read_excel("C:\\Users\\Admin\\Desktop\\Course_Recommendation\\code\\encoded_data1.xlsx")
 
 aggregation_functions = {'Grade': 'mean', 'Attepmpts': 'mean'}
 for col in df_dataset.columns:

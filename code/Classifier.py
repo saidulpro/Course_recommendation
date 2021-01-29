@@ -9,7 +9,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
-df_dataset = pd.read_excel("C:\\Users\\Kmahmoud\\Desktop\\Course-Recommendation-System\\code\\encoded_data.xlsx")
+df_dataset = pd.read_excel("C:\\Users\\Kmahmoud\\Desktop\\Course-Recommendation-System\\code\\encoded_data1.xlsx")
 
 # Spliting data into test and train
 feature_names = df_dataset.columns.drop(['Student ID', 'Attepmpts'])
